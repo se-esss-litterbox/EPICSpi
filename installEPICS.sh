@@ -38,7 +38,7 @@ make
 #########################################################################
 
 mkdir -p /home/pi/Apps/epics/modules
-tar -zxf /home/pi/Downloads/asyn4-28.tar.gz -C /home/pi/Apps/epics/modules/
+tar -zxf /home/pi/Downloads/tmp_epics/asyn4-28.tar.gz -C /home/pi/Apps/epics/modules/
 ln -s /home/pi/Apps/epics/modules/asyn4-28 /home/pi/Apps/epics/modules/asyn
 cd /home/pi/Apps/epics/modules/asyn
 
@@ -57,7 +57,7 @@ make
 
 mkdir /home/pi/Apps/epics/modules/stream
 cd /home/pi/Apps/epics/modules/stream
-tar -zxvf ~/Downloads/StreamDevice-2.tgz -C  /home/pi/Apps/epics/modules/stream
+tar -zxvf ~/Downloads/tmp_epics/StreamDevice-2.tgz -C  /home/pi/Apps/epics/modules/stream
 makeBaseApp.pl -t support ""
 
 echo "ASYN=/usr/local/epics/modules/asyn" >> configure/RELEASE
