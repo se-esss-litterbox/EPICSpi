@@ -62,7 +62,7 @@ makeBaseApp.pl -t support ""
 
 echo "ASYN=/usr/local/epics/modules/asyn" >> configure/RELEASE
 make
-cd StreamDevice-2
+cd StreamDevice-2-6
 make
 
 #########################################################################
