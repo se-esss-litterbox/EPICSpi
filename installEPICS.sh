@@ -57,7 +57,7 @@ make
 
 mkdir /home/pi/Apps/epics/modules/stream
 cd /home/pi/Apps/epics/modules/stream
-tar -zxvf ~/Downloads/tmp_epics/StreamDevice-2.tgz -C  /home/pi/Apps/epics/modules/stream
+tar -zxvf /home/pi/Downloads/tmp_epics/StreamDevice-2.tgz -C  /home/pi/Apps/epics/modules/stream
 makeBaseApp.pl -t support ""
 
 echo "ASYN=/usr/local/epics/modules/asyn" >> configure/RELEASE
