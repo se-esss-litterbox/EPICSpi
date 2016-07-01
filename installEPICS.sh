@@ -9,7 +9,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Grab the necessary files
-mkdir /home/pi/Downloads/tmp_epics
+mkdir -p /home/pi/Downloads/tmp_epics
 cd /home/pi/Downloads/tmp_epics
 
 wget -nv http://www.aps.anl.gov/epics/download/base/baseR3.14.12.5.tar.gz
